@@ -1,0 +1,83 @@
+test_create_rejects_negative_deposit (test_account.TestAccountConstruction.test_create_rejects_negative_deposit) ... ok
+test_create_with_default_zero (test_account.TestAccountConstruction.test_create_with_default_zero) ... ok
+test_create_with_initial_deposit (test_account.TestAccountConstruction.test_create_with_initial_deposit) ... ok
+test_create_with_zero_initial_deposit (test_account.TestAccountConstruction.test_create_with_zero_initial_deposit) ... ok
+test_initial_deposit_is_logged (test_account.TestAccountConstruction.test_initial_deposit_is_logged) ... ok
+test_buy_case_insensitive (test_account.TestBuyShares.test_buy_case_insensitive) ... ok
+test_buy_decreases_cash_and_increases_holdings (test_account.TestBuyShares.test_buy_decreases_cash_and_increases_holdings) ... ok
+test_buy_logs_transaction (test_account.TestBuyShares.test_buy_logs_transaction) ... ok
+test_buy_rejects_empty_symbol (test_account.TestBuyShares.test_buy_rejects_empty_symbol) ... ok
+test_buy_rejects_insufficient_cash (test_account.TestBuyShares.test_buy_rejects_insufficient_cash) ... ok
+test_buy_rejects_negative_quantity (test_account.TestBuyShares.test_buy_rejects_negative_quantity) ... ok
+test_buy_rejects_non_int_quantity (test_account.TestBuyShares.test_buy_rejects_non_int_quantity) ... ok
+test_buy_rejects_non_string_symbol (test_account.TestBuyShares.test_buy_rejects_non_string_symbol) ... ok
+test_buy_rejects_unknown_symbol (test_account.TestBuyShares.test_buy_rejects_unknown_symbol) ... ok
+test_buy_rejects_whitespace_symbol (test_account.TestBuyShares.test_buy_rejects_whitespace_symbol) ... ok
+test_buy_rejects_zero_quantity (test_account.TestBuyShares.test_buy_rejects_zero_quantity) ... ok
+test_buy_state_unchanged_after_error (test_account.TestBuyShares.test_buy_state_unchanged_after_error) ... ok
+test_multiple_buys_accumulate (test_account.TestBuyShares.test_multiple_buys_accumulate) ... ok
+test_deposit_accepts_int_amount (test_account.TestDepositWithdraw.test_deposit_accepts_int_amount) ... ok
+test_deposit_increases_cash (test_account.TestDepositWithdraw.test_deposit_increases_cash) ... ok
+test_deposit_logs_transaction (test_account.TestDepositWithdraw.test_deposit_logs_transaction) ... ok
+test_deposit_rejects_negative (test_account.TestDepositWithdraw.test_deposit_rejects_negative) ... ok
+test_deposit_rejects_zero (test_account.TestDepositWithdraw.test_deposit_rejects_zero) ... ok
+test_exception_hierarchy (test_account.TestDepositWithdraw.test_exception_hierarchy) ... ok
+test_withdraw_decreases_cash (test_account.TestDepositWithdraw.test_withdraw_decreases_cash) ... ok
+test_withdraw_exact_balance (test_account.TestDepositWithdraw.test_withdraw_exact_balance) ... ok
+test_withdraw_logs_transaction (test_account.TestDepositWithdraw.test_withdraw_logs_transaction) ... ok
+test_withdraw_rejects_negative (test_account.TestDepositWithdraw.test_withdraw_rejects_negative) ... ok
+test_withdraw_rejects_overdraw (test_account.TestDepositWithdraw.test_withdraw_rejects_overdraw) ... ok
+test_withdraw_rejects_zero (test_account.TestDepositWithdraw.test_withdraw_rejects_zero) ... ok
+test_account_error_is_base_class (test_account.TestFullLifecycle.test_account_error_is_base_class) ... ok
+test_deposit_buy_sell_withdraw (test_account.TestFullLifecycle.test_deposit_buy_sell_withdraw) ... ok
+test_case_insensitive_lookup (test_account.TestPrices.test_case_insensitive_lookup) ... ok
+test_empty_symbol_raises_value_error (test_account.TestPrices.test_empty_symbol_raises_value_error) ... ok
+test_known_symbols_return_fixed_prices (test_account.TestPrices.test_known_symbols_return_fixed_prices) ... ok
+test_non_string_symbol_raises_value_error (test_account.TestPrices.test_non_string_symbol_raises_value_error) ... ok
+test_unknown_symbol_raises_value_error (test_account.TestPrices.test_unknown_symbol_raises_value_error) ... ok
+test_calculate_portfolio_value_cash_only (test_account.TestReporting.test_calculate_portfolio_value_cash_only) ... ok
+test_calculate_portfolio_value_includes_holdings (test_account.TestReporting.test_calculate_portfolio_value_includes_holdings) ... ok
+test_calculate_portfolio_value_uses_current_prices (test_account.TestReporting.test_calculate_portfolio_value_uses_current_prices) ... ok
+test_calculate_profit_or_loss_breaks_even (test_account.TestReporting.test_calculate_profit_or_loss_breaks_even) ... ok
+test_calculate_profit_or_loss_includes_withdrawals (test_account.TestReporting.test_calculate_profit_or_loss_includes_withdrawals) ... ok
+test_calculate_profit_or_loss_negative (test_account.TestReporting.test_calculate_profit_or_loss_negative) ... ok
+test_calculate_profit_or_loss_positive (test_account.TestReporting.test_calculate_profit_or_loss_positive) ... ok
+test_get_holdings_empty_initially (test_account.TestReporting.test_get_holdings_empty_initially) ... ok
+test_get_holdings_omits_zero_quantities (test_account.TestReporting.test_get_holdings_omits_zero_quantities) ... ok
+test_get_holdings_returns_copy (test_account.TestReporting.test_get_holdings_returns_copy) ... ok
+test_to_holdings_rows_after_full_sell (test_account.TestRowHelpers.test_to_holdings_rows_after_full_sell) ... ok
+test_to_holdings_rows_contents (test_account.TestRowHelpers.test_to_holdings_rows_contents) ... ok
+test_to_holdings_rows_empty (test_account.TestRowHelpers.test_to_holdings_rows_empty) ... ok
+test_to_transaction_rows_empty (test_account.TestRowHelpers.test_to_transaction_rows_empty) ... ok
+test_to_transaction_rows_matches_history (test_account.TestRowHelpers.test_to_transaction_rows_matches_history) ... ok
+test_sell_all_removes_holding (test_account.TestSellShares.test_sell_all_removes_holding) ... ok
+test_sell_case_insensitive (test_account.TestSellShares.test_sell_case_insensitive) ... ok
+test_sell_increases_cash_and_decreases_holdings (test_account.TestSellShares.test_sell_increases_cash_and_decreases_holdings) ... ok
+test_sell_logs_transaction (test_account.TestSellShares.test_sell_logs_transaction) ... ok
+test_sell_rejects_empty_symbol (test_account.TestSellShares.test_sell_rejects_empty_symbol) ... ok
+test_sell_rejects_insufficient_shares (test_account.TestSellShares.test_sell_rejects_insufficient_shares) ... ok
+test_sell_rejects_negative_quantity (test_account.TestSellShares.test_sell_rejects_negative_quantity) ... ok
+test_sell_rejects_non_int_quantity (test_account.TestSellShares.test_sell_rejects_non_int_quantity) ... ok
+test_sell_rejects_unknown_symbol (test_account.TestSellShares.test_sell_rejects_unknown_symbol) ... ok
+test_sell_rejects_zero_quantity (test_account.TestSellShares.test_sell_rejects_zero_quantity) ... ok
+test_sell_state_unchanged_after_error (test_account.TestSellShares.test_sell_state_unchanged_after_error) ... ok
+test_history_is_chronological (test_account.TestTransactionHistory.test_history_is_chronological) ... ok
+test_history_is_complete (test_account.TestTransactionHistory.test_history_is_complete) ... ok
+test_history_records_correct_cash_after (test_account.TestTransactionHistory.test_history_records_correct_cash_after) ... ok
+test_history_returns_copy (test_account.TestTransactionHistory.test_history_returns_copy) ... ok
+test_history_timestamps_are_unique_strings (test_account.TestTransactionHistory.test_history_timestamps_are_unique_strings) ... ok
+test_buy_row_contains_symbol (test_account.TestTransactionToRow.test_buy_row_contains_symbol) ... ok
+test_deposit_row_has_empty_symbol (test_account.TestTransactionToRow.test_deposit_row_has_empty_symbol) ... ok
+test_sell_row_contains_symbol (test_account.TestTransactionToRow.test_sell_row_contains_symbol) ... ok
+test_withdraw_row_has_empty_symbol (test_account.TestTransactionToRow.test_withdraw_row_has_empty_symbol) ... ok
+
+----------------------------------------------------------------------
+Ran 72 tests in 0.004s
+
+OK
+
+
+Success: True
+Tests run: 72
+Failures: 0
+Errors: 0
